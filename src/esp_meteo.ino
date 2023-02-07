@@ -78,7 +78,7 @@ void loop()
     
     //html definition
     client.println("<!DOCTYPE html><html>");
-    client.println("<head><meta http-equiv=\"refresh\" content=\"6\"></head>");
+    client.println("<head></head>");
     client.println("<body><h1>Humidity and temp</h1>");
 
   int dat = DHT11.read(D3);
