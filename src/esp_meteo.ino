@@ -5,6 +5,8 @@
 
 #define airLedPin D6
 #define connLedPin D7
+#define SSID "libovolnejmeno"
+#define PASSWD "libovolneheslo"
 WiFiServer server(80);
 
 String header;
@@ -17,7 +19,7 @@ Adafruit_BMP280 bmp;
 void setup()
 {
   Serial.begin(9600);
-  WiFi.begin("Vladi", "davidcrofts");
+  WiFi.begin(SSID, PASSWD);
   Serial.println();
   Serial.println("hello!");
   Serial.println("sensor test");
